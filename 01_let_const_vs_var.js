@@ -7,9 +7,15 @@ functions, variables, classes, or imports to  the top of their scope, prior to e
 /* a = 5  // no hoisting (ReferenceError: a is not defined on accessing before declaration),
  function scoped, can be redeclared there is no declaration though*/
 
-console.log(a)
+console.log(x); // undefined
+
+var x = 5;
+
+console.group(x); // 5
+
+// console.log(a); // Reference Error
 a = 5;
 
-a = 'sdsd'
+a = "sdsd";
 
 console.log(a);
